@@ -1,0 +1,32 @@
+{
+  "name": "hall-and-oates-ipsum",
+  "description": "Hall and Oates based Lorem Ipsum!",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/hall-and-oates-ipsum/issues"
+  },
+  "dependencies": {
+    "babel": "5.4.7"
+  },
+  "devDependencies": {
+    "eslint": "0.21.2"
+  },
+  "homepage": "https://github.com/pdehaan/hall-and-oates-ipsum#readme",
+  "keywords": [
+    "lorem ipsum",
+    "hall and oates"
+  ],
+  "license": "WTFPL",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/hall-and-oates-ipsum.git"
+  },
+  "scripts": {
+    "compile": "babel src --out-dir dist",
+    "prepublish": "npm run compile",
+    "start": "npm run compile && node dist/test",
+    "test": "eslint ."
+  }
+}
