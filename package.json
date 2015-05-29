@@ -7,9 +7,9 @@
     "url": "https://github.com/pdehaan/hall-and-oates-ipsum/issues"
   },
   "dependencies": {
-    "babel": "5.4.7"
   },
   "devDependencies": {
+    "babel": "5.4.7",
     "eslint": "0.21.2"
   },
   "homepage": "https://github.com/pdehaan/hall-and-oates-ipsum#readme",
