@@ -9,7 +9,11 @@
   "dependencies": {},
   "devDependencies": {
     "babel": "5.4.7",
-    "eslint": "0.21.2"
+    "chai": "2.3.0",
+    "eslint": "0.21.2",
+    "eslint-config-standard": "1.1.1",
+    "mocha": "2.2.5",
+    "rimraf": "2.3.4"
   },
   "homepage": "https://github.com/pdehaan/hall-and-oates-ipsum#readme",
   "keywords": [
@@ -24,8 +28,11 @@
   },
   "scripts": {
     "compile": "babel src --out-dir dist",
+    "lint": "eslint .",
+    "precompile": "rimraf dist",
     "prepublish": "npm run compile",
-    "start": "npm run compile && node dist/test",
-    "test": "eslint ."
+    "posttest": "npm run lint",
+    "start": "npm run compile && npm run test",
+    "test": "mocha src/tests/ --compilers js:babel/register"
   }
 }

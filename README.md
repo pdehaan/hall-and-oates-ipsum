@@ -11,17 +11,23 @@ $ npm install hall-and-oates-ipsum --save
 ## Usage:
 
 ```js
-var hallAndOatesIpsum = require('hall-and-oates-ipsum')
+var hallAndOates = require('hall-and-oates-ipsum')
 
-// Return all lorem-y text:
-console.log(hallAndOatesIpsum())
+// Return full song lyrics:
+console.log(hallAndOates.ipsum())
 
 // Return the first 6 words of lyrics:
-console.log(hallAndOatesIpsum('words', 6))
+console.log(hallAndOates.ipsum({words: 6}))
 
 // Return the first 2 lines of lyrics:
-console.log(hallAndOatesIpsum('lines', 2))
+console.log(hallAndOates.ipsum({lines: 2}))
 
 // Return the first paragraph of lyrics:
-console.log(hallAndOatesIpsum('paragraphs', 1))
+console.log(hallAndOates.ipsum({paragraphs: 1}))
+
+// Return different song lyrics:
+console.log(hallAndOates.ipsum({
+  lines: 3,
+  song: hallAndOates.MANEATER
+}))
 ```
