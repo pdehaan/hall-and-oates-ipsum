@@ -1,11 +1,13 @@
 export const PRIVATE_EYES = 'private-eyes'
 export const MANEATER = 'maneater'
 export const I_CANT_GO_FOR_THAT_NO_CAN_DO = 'i-cant-go-for-that-no-can-do'
+export const RICH_GIRL = 'rich-girl'
 
 export const SONGS = [
   PRIVATE_EYES,
   MANEATER,
-  I_CANT_GO_FOR_THAT_NO_CAN_DO
+  I_CANT_GO_FOR_THAT_NO_CAN_DO,
+  RICH_GIRL
 ]
 
 export function ipsum (options = {}) {
@@ -41,7 +43,7 @@ function paragraphs (str, count = NaN) {
 }
 
 function _splitStr (str, count, splitToken, joinToken = splitToken) {
-  if (isNaN(count) || parseInt(count, 10) <= 0) {
+  if (isNaN(count) || parseInt(count, 10) <= 0 || !splitToken) {
     return str
   }
   return str.split(splitToken).splice(0, count).join(joinToken)
