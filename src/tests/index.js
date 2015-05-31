@@ -5,6 +5,7 @@ import * as hallAndOates from '../index'
 
 import PRIVATE_EYES from '../songs/private-eyes'
 import MANEATER from '../songs/maneater'
+import I_CANT_GO_FOR_THAT_NO_CAN_DO from '../songs/i-cant-go-for-that-no-can-do'
 
 const PRIVATE_EYES_6_WORDS = `I see you, you see me`
 
@@ -56,6 +57,12 @@ describe('hallAndOates', function () {
     expect(hallAndOates.ipsum({
       song: hallAndOates.MANEATER
     })).to.equal(MANEATER)
+  })
+
+  it('returns the full song when specifying `{song:I_CANT_GO_FOR_THAT_NO_CAN_DO}`', function () {
+    expect(hallAndOates.ipsum({
+      song: hallAndOates.I_CANT_GO_FOR_THAT_NO_CAN_DO
+    })).to.equal(I_CANT_GO_FOR_THAT_NO_CAN_DO)
   })
 
   it('returns a specified lines song when specifying `{song:value, lines:2}`', function () {

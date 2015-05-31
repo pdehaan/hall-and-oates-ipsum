@@ -1,8 +1,11 @@
 export const PRIVATE_EYES = 'private-eyes'
 export const MANEATER = 'maneater'
+export const I_CANT_GO_FOR_THAT_NO_CAN_DO = 'i-cant-go-for-that-no-can-do'
+
 export const SONGS = [
   PRIVATE_EYES,
-  MANEATER
+  MANEATER,
+  I_CANT_GO_FOR_THAT_NO_CAN_DO
 ]
 
 export function ipsum (options = {}) {
