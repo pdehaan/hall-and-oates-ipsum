@@ -11,6 +11,6 @@ cache:
     - node_modules
 
 after_success:
-  - npm install nsp
   - npm shrinkwrap --dev
+  - npm install nsp -g
   - nsp audit-shrinkwrap
