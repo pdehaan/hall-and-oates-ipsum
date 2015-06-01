@@ -2,6 +2,8 @@
 
 ... Because Lorem Ipsum wasn't interesting enough, plus, Hall and Oates!
 
+[![Build Status: Travis](https://travis-ci.org/pdehaan/hall-and-oates-ipsum.svg?branch=master)](https://travis-ci.org/pdehaan/hall-and-oates-ipsum)
+
 ## Installation:
 
 ```sh
